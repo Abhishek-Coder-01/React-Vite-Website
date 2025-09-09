@@ -21,9 +21,12 @@ Deployed live on **Vercel**.
 - ⚡ Lightning-fast with Vite
 - 🎨 Modern UI with Tailwind CSS
 - 📱 Fully responsive design
-- 🔑 User Authentication (Sign In / Sign Out)
+- 🔑 User Authentication with **Clerk** (Sign In / Sign Out)
 - 📝 Feedback form to send messages
-- 🔗 Easy to deploy on Vercel
+- 🌗 System-based **Light & Dark Mode**
+- 🔗 Easy deployment on Vercel
+
+---
 
 ---
 
@@ -54,11 +57,11 @@ npm run dev
 
 ----------------------------
 
-🌐 Live Demo:
-🔗https://react-vite-website-xi.vercel.app/
+##🌐 Live Demo:
+**🔗https://react-vite-website-xi.vercel.app/**
 
-✨ Author:
-👤 Abhishek Yadav
-📧 timepass80100@gmail.com.com
+##✨ Author:
+**👤 Abhishek Yadav**
+**📧 timepass80100@gmail.com.com**
 
-🌍 GitHub Profile
+##🌍 GitHub Profile
