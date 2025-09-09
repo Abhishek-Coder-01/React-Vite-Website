@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Website — Teal & Ecru</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --background: 69 32% 92%;
+            --foreground: 187 79% 20%;
+            --card: 0 0% 100%;
+            --card-foreground: 187 79% 20%;
+            --popover: 0 0% 100%;
+            --popover-foreground: 187 79% 20%;
+            --primary: 187 79% 20%;
+            --primary-foreground: 0 0% 100%;
+            --secondary: 69 32% 92%;
+            --secondary-foreground: 187 79% 20%;
+            --muted: 69 25% 88%;
+            --muted-foreground: 187 20% 35%;
+            --accent: 69 32% 92%;
+            --accent-foreground: 187 79% 20%;
+            --destructive: 0 84% 60%;
+            --destructive-foreground: 0 0% 100%;
+            --border: 69 20% 85%;
+            --input: 69 20% 85%;
+            --ring: 187 79% 20%;
+        }
+
+        .dark {
+            --background: 187 79% 20%;
+            --foreground: 69 32% 92%;
+            --card: 187 79% 18%;
+            --card-foreground: 69 32% 92%;
+            --popover: 187 79% 18%;
+            --popover-foreground: 69 32% 92%;
+            --primary: 69 32% 92%;
+            --primary-foreground: 187 79% 20%;
+            --secondary: 187 50% 15%;
+            --secondary-foreground: 69 32% 92%;
+            --muted: 187 40% 22%;
+            --muted-foreground: 69 25% 80%;
+            --accent: 187 50% 15%;
+            --accent-foreground: 69 32% 92%;
+            --destructive: 0 62% 40%;
+            --destructive-foreground: 0 0% 100%;
+            --border: 187 35% 28%;
+            --input: 187 35% 28%;
+            --ring: 69 32% 92%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .heading-display {
+            font-size: clamp(2.25rem, 4vw + 1rem, 4rem);
+            line-height: 1.1;
+            letter-spacing: -.02em;
+            font-weight: 800
+        }
+
+        @keyframes blob {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1)
+            }
+
+            25% {
+                transform: translate(10%, -5%) scale(1.05)
+            }
+
+            50% {
+                transform: translate(-5%, 8%) scale(1)
+            }
+
+            75% {
+                transform: translate(-12%, -6%) scale(1.03)
+            }
+        }
+
+        .animate-blob {
+            animation: blob 20s ease-in-out infinite
+        }
+
+        .animate-blob-delayed {
+            animation: blob 26s ease-in-out infinite 3s
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-[hsl(var(--background))] text-[hsl(var(--foreground))] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
