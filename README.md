@@ -1,7 +1,7 @@
 # 🚀 React Vite Website
 
 A modern, responsive website built with **React + Vite** and styled using **Tailwind CSS**.  
-Includes **Clerk Authentication (Sign In / Sign Out)** and a **Feedback System**.  
+Includes **Clerk Authentication (Sign In / Sign Out)**, a **Feedback System**, and **System Light & Dark Mode**.  
 Deployed live on **Vercel**.
 
 ---
@@ -11,10 +11,9 @@ Deployed live on **Vercel**.
 ### 🖥️ Desktop View  
 <img width="1876" height="1036" alt="image" src="https://github.com/user-attachments/assets/63a891da-23e3-4c62-ac95-85b4b46ed5e1" />
  
-
 ### 📱 Mobile View  
 <img width="576" height="925" alt="Screenshot 2025-09-10 013259" src="https://github.com/user-attachments/assets/7fcb12c6-342b-4585-bf19-86e1aa4cf405" />
- 
+
 ---
 
 ## 📌 Features
@@ -28,15 +27,12 @@ Deployed live on **Vercel**.
 
 ---
 
----
-
 ## 🛠️ Tech Stack
 - **React** ⚛️  
 - **Vite** ⚡  
 - **Tailwind CSS** 🎨  
-- **Clerk / Firebase** 🔑
-- **Email.json** ✉
-- 
+- **Clerk** 🔑 (Authentication)  
+- **Firebase / Email.js** ✉ (Feedback handling)  
 
 ---
 
@@ -55,17 +51,13 @@ npm install
 # Start development server
 npm run dev
 
----
+```
 
-## 🌐 Live Demo
-**🔗 https://react-vite-website-xi.vercel.app/**  
+## 🌐 Live Demo:
+**🔗 [https://react-vite-website-xi.vercel.app/](https://react-vite-website-xi.vercel.app/)**
 
-## ✨ Author
-**👤 Abhishek Yadav**  
-**📧 timepass80100@gmail.com**  
-
-## 🌍 GitHub Profile  
-[Abhishek-Coder-01](https://github.com/Abhishek-Coder-01)
-
----
+## ✨ Author:
+**👤 Abhishek Yadav**
+**📧 timepass80100@gmail.com**
+**🌍 GitHub Profile: [Abhishek-Coder-01](https://github.com/Abhishek-Coder-01)**
 
