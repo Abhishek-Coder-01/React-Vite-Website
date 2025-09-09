@@ -58,6 +58,6 @@ npm run dev
 
 ## ✨ Author:
 **👤 Abhishek Yadav**
-**📧 timepass80100@gmail.com**
+**📧 timepass80100@gmail.com**<br>
 **🌍 GitHub Profile: [Abhishek-Coder-01](https://github.com/Abhishek-Coder-01)**
 
