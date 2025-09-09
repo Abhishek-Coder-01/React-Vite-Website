@@ -57,11 +57,13 @@ npm run dev
 
 ----------------------------
 
-##🌐 Live Demo:
-**🔗https://react-vite-website-xi.vercel.app/**
+## 🌐 Live Demo:
+**🔗 https://react-vite-website-xi.vercel.app/**  
 
-##✨ Author:
-**👤 Abhishek Yadav**
-**📧 timepass80100@gmail.com.com**
+## ✨ Author:
+**👤 Abhishek Yadav**  
+**📧 timepass80100@gmail.com**  
 
-##🌍 GitHub Profile
+## 🌍 GitHub Profile  
+[Abhishek-Coder-01](https://github.com/Abhishek-Coder-01)
+
