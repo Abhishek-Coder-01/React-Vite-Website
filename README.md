@@ -55,15 +55,17 @@ npm install
 # Start development server
 npm run dev
 
-----------------------------
+---
 
-## 🌐 Live Demo:
+## 🌐 Live Demo
 **🔗 https://react-vite-website-xi.vercel.app/**  
 
-## ✨ Author:
+## ✨ Author
 **👤 Abhishek Yadav**  
 **📧 timepass80100@gmail.com**  
 
 ## 🌍 GitHub Profile  
 [Abhishek-Coder-01](https://github.com/Abhishek-Coder-01)
+
+---
 
