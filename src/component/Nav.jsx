@@ -58,11 +58,6 @@ function Nav() {
     return "";
   };
 
-  // Detect if device is mobile (for better hamburger menu control)
-  const isMobileDevice = () => {
-    return /Mobi|Android|iPhone|iPad|iPod/.test(navigator.userAgent);
-  };
-
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[hsl(var(--border))] bg-[hsl(var(--background))]/80 backdrop-blur">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-[70px] items-center justify-between">
@@ -137,12 +132,41 @@ function Nav() {
           </SignedOut>
 
           <SignedIn>
-            <UserButton appearance={{ elements: { userButtonAvatarBox: "h-10 w-10", userButtonAvatarImage: "h-10 w-10" } }} />
+            <UserButton 
+              appearance={{ 
+                elements: { 
+                  userButtonAvatarBox: "h-10 w-10", 
+                  userButtonAvatarImage: "h-10 w-10",
+                  userButtonPopoverCard: "max-sm:!fixed max-sm:!bottom-0 max-sm:!left-0 max-sm:!right-0 max-sm:!top-auto max-sm:!rounded-b-none max-sm:!border-t",
+                  userButtonPopoverActionButton: "max-sm:!justify-center",
+                  userButtonPopoverActionButtonText: "max-sm:!text-lg",
+                  userButtonPopoverFooter: "max-sm:!hidden"
+                } 
+              }} 
+            />
           </SignedIn>
         </div>
 
         {/* Mobile Menu Button (show on mobile devices, even in desktop mode) */}
         <div className="flex lg:hidden items-center gap-3">
+          {/* Show UserButton on mobile when signed in */}
+          <SignedIn>
+            <div className="mr-2">
+              <UserButton 
+                appearance={{ 
+                  elements: { 
+                    userButtonAvatarBox: "h-10 w-10", 
+                    userButtonAvatarImage: "h-10 w-10",
+                    userButtonPopoverCard: "max-sm:!fixed max-sm:!bottom-0 max-sm:!left-0 max-sm:!right-0 max-sm:!top-auto max-sm:!rounded-b-none max-sm:!border-t",
+                    userButtonPopoverActionButton: "max-sm:!justify-center",
+                    userButtonPopoverActionButtonText: "max-sm:!text-lg",
+                    userButtonPopoverFooter: "max-sm:!hidden"
+                  } 
+                }} 
+              />
+            </div>
+          </SignedIn>
+          
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2 rounded-md bg-[#2A676D] text-[#FFFFFF] dark:bg-[#E2E7DC] dark:text-black transition flex flex-col justify-center items-center w-10 h-10"
