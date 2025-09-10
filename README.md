@@ -57,7 +57,7 @@ npm run dev
 **🔗 [https://react-vite-website-xi.vercel.app/](https://react-vite-website-xi.vercel.app/)**
 
 ## ✨ Author:
-**👤 Abhishek Yadav**
+**👤 Abhishek Yadav**<br>
 **📧 timepass80100@gmail.com**<br>
 **🌍 GitHub Profile: [Abhishek-Coder-01](https://github.com/Abhishek-Coder-01)**
 
