@@ -1,12 +1,63 @@
-# React + Vite
+# 🚀 React Vite Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website built with **React + Vite** and styled using **Tailwind CSS**.  
+Includes **Clerk Authentication (Sign In / Sign Out)**, a **Feedback System**, and **System Light & Dark Mode**.  
+Deployed live on **Vercel**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots  
 
-## Expanding the ESLint configuration
+### 🖥️ Desktop View  
+<img width="1876" height="1036" alt="image" src="https://github.com/user-attachments/assets/63a891da-23e3-4c62-ac95-85b4b46ed5e1" />
+ 
+### 📱 Mobile View  
+<img width="576" height="925" alt="Screenshot 2025-09-10 013259" src="https://github.com/user-attachments/assets/7fcb12c6-342b-4585-bf19-86e1aa4cf405" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Features
+- ⚡ Lightning-fast with Vite
+- 🎨 Modern UI with Tailwind CSS
+- 📱 Fully responsive design
+- 🔑 User Authentication with **Clerk** (Sign In / Sign Out)
+- 📝 Feedback form to send messages
+- 🌗 System-based **Light & Dark Mode**
+- 🔗 Easy deployment on Vercel
+
+---
+
+## 🛠️ Tech Stack
+- **React** ⚛️  
+- **Vite** ⚡  
+- **Tailwind CSS** 🎨  
+- **Clerk** 🔑 (Authentication)  
+- **Firebase / Email.js** ✉ (Feedback handling)  
+
+---
+
+## 📂 Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/Abhishek-Coder-01/React-Vite-Website.git
+
+# Navigate to the project folder
+cd React-Vite-Website
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+```
+
+## 🌐 Live Demo:
+**🔗 [https://react-vite-website-xi.vercel.app/](https://react-vite-website-xi.vercel.app/)**
+
+## ✨ Author:
+**👤 Abhishek Yadav**
+**📧 timepass80100@gmail.com**<br>
+**🌍 GitHub Profile: [Abhishek-Coder-01](https://github.com/Abhishek-Coder-01)**
+
