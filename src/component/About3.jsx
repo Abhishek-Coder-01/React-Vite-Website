@@ -90,7 +90,10 @@ function About3() {
 
   return (
     <section id="contact" className="border-t border-[hsl(var(--border))] bg-gradient-to-b from-[hsl(var(--background))] to-[hsl(var(--muted))]">
+
+
       <div className="container mx-auto px-6 py-16 md:py-24">
+
         <motion.div
           className="mx-auto max-w-3xl"
           initial={{ opacity: 0, y: 20 }}
@@ -98,7 +101,19 @@ function About3() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
+
+
           <div className="text-center mb-10">
+            <div
+              className="inline-flex items-center rounded-full bg-[hsl(var(--accent))] px-4 py-2 text-sm font-semibold text-[hsl(var(--accent-foreground))] ring-1 ring-inset ring-[hsl(var(--border))] mb-6 shadow-sm"
+            >
+              <div className="relative flex h-2 w-2 mr-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(var(--primary))] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[hsl(var(--primary))]"></span>
+              </div>
+              Contact us
+            </div>
+
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Get in Touch</h2>
             <p className="mt-4 text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
               Have questions or want to discuss a project? Send us a message and we'll get back to you as soon as possible.
@@ -201,18 +216,18 @@ function About3() {
                 >
                   {loading ? (
                     <>
-                      
+
                       Sending...<svg width="22" height="22" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="25" cy="25" r="20" stroke="#1A73E8" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="80 150">
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 25 25"
-      to="360 25 25"
-      dur="1s"
-      repeatCount="indefinite"/>
-  </circle>
-</svg>
+                        <circle cx="25" cy="25" r="20" stroke="#1A73E8" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="80 150">
+                          <animateTransform
+                            attributeName="transform"
+                            type="rotate"
+                            from="0 25 25"
+                            to="360 25 25"
+                            dur="1s"
+                            repeatCount="indefinite" />
+                        </circle>
+                      </svg>
 
                     </>
                   ) : (
@@ -280,7 +295,7 @@ function About3() {
               <h3 className="font-semibold mb-2">Visit Us</h3>
               <p className="text-[hsl(var(--muted-foreground))]">123 Main St, Bhiwandi, India</p>
             </div>
-           
+
           </motion.div>
         </motion.div>
       </div>

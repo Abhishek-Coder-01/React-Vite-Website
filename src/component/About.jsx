@@ -1,10 +1,19 @@
 import React from 'react'
 
 function About() {
-  return (
-           <section id="about" className="border-t border-[hsl(var(--border))] bg-[hsl(var(--card))]/50">
+    return (
+        <section id="about" className="border-t border-[hsl(var(--border))] bg-[hsl(var(--card))]/50">
             <div className="container mx-auto px-6 py-16 md:py-24 grid gap-10 md:grid-cols-2 items-center">
                 <div>
+                    <div
+                        className="inline-flex items-center rounded-full bg-[hsl(var(--accent))] px-4 py-2 text-sm font-semibold text-[hsl(var(--accent-foreground))] ring-1 ring-inset ring-[hsl(var(--border))] mb-6 shadow-sm"
+                    >
+                        <div className="relative flex h-2 w-2 mr-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(var(--primary))] opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-[hsl(var(--primary))]"></span>
+                        </div>
+                        About
+                    </div>
                     <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">Designed around your palette</h3>
                     <p className="mt-4 text-[hsl(var(--foreground))/0.7]">The theme system maps primary actions to teal and
                         surfaces to ecru. Toggle dark mode to see the inverted palette in action.</p>
@@ -18,18 +27,18 @@ function About() {
                 </div>
                 <div className="rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-6 shadow-sm">
                     <div className="flex items-center justify-between"><span className="text-sm font-semibold">Color
-                            Tokens</span><span className="text-xs text-[hsl(var(--foreground))/0.6]">HSL</span></div>
+                        Tokens</span><span className="text-xs text-[hsl(var(--foreground))/0.6]">HSL</span></div>
                     <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
                         <div className="space-y-2">
                             <div className="h-14 rounded-md bg-[hsl(var(--primary))]"></div>
                             <div className="flex items-center justify-between text-xs"><span
-                                    className="font-medium">primary</span><span
+                                className="font-medium">primary</span><span
                                     className="text-[hsl(var(--foreground))/0.7]">#0B545D</span></div>
                         </div>
                         <div className="space-y-2">
                             <div className="h-14 rounded-md bg-[hsl(var(--accent))]"></div>
                             <div className="flex items-center justify-between text-xs"><span
-                                    className="font-medium">accent</span><span
+                                className="font-medium">accent</span><span
                                     className="text-[hsl(var(--foreground))/0.7]">#EFF1E4</span></div>
                         </div>
                         <div className="space-y-2">
@@ -37,7 +46,7 @@ function About() {
                                 className="h-14 rounded-md bg-[hsl(var(--background))] ring-1 ring-inset ring-[hsl(var(--border))]">
                             </div>
                             <div className="flex items-center justify-between text-xs"><span
-                                    className="font-medium">background</span><span
+                                className="font-medium">background</span><span
                                     className="text-[hsl(var(--foreground))/0.7]">#EFF1E4</span></div>
                         </div>
                         <div className="space-y-2">
@@ -45,14 +54,14 @@ function About() {
                                 className="h-14 rounded-md bg-[hsl(var(--foreground))/0.1] ring-1 ring-inset ring-[hsl(var(--border))]">
                             </div>
                             <div className="flex items-center justify-between text-xs"><span
-                                    className="font-medium">foreground</span><span
+                                className="font-medium">foreground</span><span
                                     className="text-[hsl(var(--foreground))/0.7]">#0B545D</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-  )
+    )
 }
 
 export default About
