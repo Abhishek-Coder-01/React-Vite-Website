@@ -23,7 +23,7 @@ function Nav() {
     }
   };
 
-  // init theme on mount
+  // Init theme on mount
   useEffect(() => {
     const stored = localStorage.getItem("theme");
     if (stored === "light" || stored === "dark") {
@@ -58,10 +58,14 @@ function Nav() {
     return "";
   };
 
+  // Detect if device is mobile (for better hamburger menu control)
+  const isMobileDevice = () => {
+    return /Mobi|Android|iPhone|iPad|iPod/.test(navigator.userAgent);
+  };
+
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[hsl(var(--border))] bg-[hsl(var(--background))]/80 backdrop-blur">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-[70px] items-center justify-between">
-        
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--primary))]/80 text-[hsl(var(--primary-foreground))] font-bold text-lg shadow-md">
@@ -137,8 +141,8 @@ function Nav() {
           </SignedIn>
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="lg:hidden flex items-center gap-3">
+        {/* Mobile Menu Button (show on mobile devices, even in desktop mode) */}
+        <div className="flex lg:hidden items-center gap-3">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2 rounded-md bg-[#2A676D] text-[#FFFFFF] dark:bg-[#E2E7DC] dark:text-black transition flex flex-col justify-center items-center w-10 h-10"
@@ -169,23 +173,29 @@ function Nav() {
             {/* Theme buttons mobile */}
             <div className="w-full flex justify-center mt-2">
               <div className="flex w-[180px] justify-center items-center gap-2 bg-white/70 backdrop-blur-md rounded-full shadow px-4 py-[7px] dark:bg-[#09474F]">
-                {/* system */}
-                <button onClick={() => handleSetTheme("system")} className={`theme-btn h-9 w-9 rounded-full hover:bg-gray-200 grid place-items-center dark:hover:bg-[#0B545D] transition ${activeClasses("system")}`}>
+                <button
+                  onClick={() => handleSetTheme("system")}
+                  className={`theme-btn h-9 w-9 rounded-full hover:bg-gray-200 grid place-items-center dark:hover:bg-[#0B545D] transition ${activeClasses("system")}`}
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
                     <line x1="8" y1="21" x2="16" y2="21" />
                     <line x1="12" y1="17" x2="12" y2="21" />
                   </svg>
                 </button>
-                {/* light */}
-                <button onClick={() => handleSetTheme("light")} className={`theme-btn h-9 w-9 rounded-full hover:bg-gray-200 grid place-items-center transition dark:hover:bg-[#0B545D] ${activeClasses("light")}`}>
+                <button
+                  onClick={() => handleSetTheme("light")}
+                  className={`theme-btn h-9 w-9 rounded-full hover:bg-gray-200 grid place-items-center transition dark:hover:bg-[#0B545D] ${activeClasses("light")}`}
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <circle cx="12" cy="12" r="4" />
                     <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.5 6.5-1.5-1.5M8 7 6.5 5.5m11 0L16.5 7M7 17l-1.5 1.5" />
                   </svg>
                 </button>
-                {/* dark */}
-                <button onClick={() => handleSetTheme("dark")} className={`theme-btn h-9 w-9 rounded-full hover:bg-gray-200 grid place-items-center dark:hover:bg-[#0B545D] transition ${activeClasses("dark")}`}>
+                <button
+                  onClick={() => handleSetTheme("dark")}
+                  className={`theme-btn h-9 w-9 rounded-full hover:bg-gray-200 grid place-items-center dark:hover:bg-[#0B545D] transition ${activeClasses("dark")}`}
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                   </svg>
@@ -197,7 +207,10 @@ function Nav() {
             <SignedOut>
               <div className="mt-2">
                 <SignInButton mode="modal">
-                  <button className="w-full rounded-lg h-10 px-3 text-sm font-semibold bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] hover:opacity-90 active:scale-95 transition-transform duration-150" onClick={() => setIsMobileMenuOpen(false)}>
+                  <button
+                    className="w-full rounded-lg h-10 px-3 text-sm font-semibold bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] hover:opacity-90 active:scale-95 transition-transform duration-150"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     Get Started
                   </button>
                 </SignInButton>
